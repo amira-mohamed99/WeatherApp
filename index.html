@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container px-4 m-4">
+        <a class="navbar-brand text-white px-5" href="#"
+          ><i class="fa-solid fa-cloud-sun-rain"></i> <span>Weather</span>
+        </a>
+        <button
+          class="navbar-toggler bg-white"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon bg-white"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item mx-3">
+              <a
+                class="nav-link active home px-3 py-1"
+                aria-current="page"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link px-3 py-1" href="#">News</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link px-3 py-1" href="#">Live camera</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link px-3 py-1" href="#">Photos</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link px-3 py-1" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section
+      id="home"
+
+    >
+      <div class="container bg-transparent">
+        <div class="search w-100 bg-transparent pt-5">
+          <form
+            class="position-relative d-flex w-75 m-auto bg-transparent"
+            role="search"
+            id="form"
+          >
+            <input
+              class="form-control rounded-pill bg-dark py-3 pe-5 border-0"
+              type="search"
+              placeholder="  Find your location..."
+              aria-label="Search"
+               id="search"
+            />
+            <button
+              class="btn position-absolute top-0 end-0 mt-2 me-2 rounded-pill px-5 py-2"
+              type="submit"
+            >
+              Find
+            </button>
+          </form>
+        </div>
+        <div class="m-4 bg-transparent mt-5" id="weathedCards">
+          <div class="row g-0 bg-transparent" id="rowItems">
+            <div class="col-md-4 my-2" id="firstCard"></div>
+            <div class="col-md-4 my-2" id="secondCard"></div>
+            <div class="col-md-4 my-2" id="thirdCard"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="footer"></footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
