@@ -33,7 +33,7 @@
 }
 /* Home */
 #home {
-  background-image: url(/weatherApp/images/banner.png);
+  background-image: url(/images/banner.png);
   width: 100%;
   height: 70vh;
   background-size: cover;
